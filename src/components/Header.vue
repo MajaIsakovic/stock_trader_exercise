@@ -1,14 +1,15 @@
 <template>
-    <div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-           <router-link to="/" class="navbar-brand">Stock Trader</router-link>
-               
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <router-link to="/" class="navbar-brand">Stock Trader</router-link>
+                </div>    
             <div class="collapse navbar-collapse">
-                <ul class="navbar-nav mr-auto">
+                <ul class="nav navbar-nav">
                     <router-link tag="li" to="/portfolio" activeClass="active"><a class="nav-item nav-link">Portfolio</a></router-link>
                     <router-link tag="li" to="/stocks" activeClass="active"><a class="nav-item nav-link">Stocks</a></router-link>
                 </ul>
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav navbar-right">
                     <li><a href="#" class="nav-item nav-link">End Day</a></li>
                     <li class="dropdown">
                         <a href="#"
@@ -25,8 +26,8 @@
                     </li>
                 </ul>
             </div>
+            </div>
         </nav>
-    </div>
 </template>
 
 <script>
